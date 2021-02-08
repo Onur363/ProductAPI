@@ -1,0 +1,16 @@
+
+<div class="form-group">
+  <input type="text" id="name" class="form-control" placeholder="enter product name" [(ngModel)]="filterProduct">
+</div>
+
+<div class="row">
+  <div *ngFor="let product of products | productFilter:filterProduct" class="card m-3 shadow" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{product.productName}}</h5>
+      <p class="card-text text-info">{{product.categoryName}}</p>
+      <p class="card-text font-weight-bold">{{product.unitPrice | currency}}</p>
+      <a href="#" class="btn btn-outline-primary">Add To Cart</a>
+    </div>
+  </div>
+</div>
+
