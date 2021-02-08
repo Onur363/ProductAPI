@@ -3,10 +3,6 @@
   <input type="text" id="name" class="form-control" placeholder="enter product name" [(ngModel)]="filterProduct">
 </div>
 
-<h3>
-  deneme
-</h3>
-
 <div class="row d-flex justify-content-center">
   <div *ngFor="let product of products | productFilter:filterProduct" class="card m-3 shadow" style="width: 18rem;">
     <div class="card-body">
