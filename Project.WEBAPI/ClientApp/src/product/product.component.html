@@ -3,6 +3,10 @@
   <input type="text" id="name" class="form-control" placeholder="enter product name" [(ngModel)]="filterProduct">
 </div>
 
+<div>
+  Products
+</div>
+
 <div class="row d-flex justify-content-center">
   <div *ngFor="let product of products | productFilter:filterProduct" class="card m-3 shadow" style="width: 18rem;">
     <div class="card-body">
